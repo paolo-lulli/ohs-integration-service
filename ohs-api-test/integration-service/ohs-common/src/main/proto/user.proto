@@ -6,6 +6,7 @@ import "google/protobuf/wrappers.proto";
 package user;
 
 option go_package = "github.com/hub335/code-test/order-handling-system/user";
+option java_package = "com.volvo.ohs.protobuf.user";
 
 service UserService {
   rpc CreateUser(CreateUserRequest) returns (UserResponse);

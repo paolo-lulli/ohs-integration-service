@@ -5,7 +5,7 @@ RUN apt-get update \
 	&& apt-get upgrade -y \
 	&& apt-get install -y openjdk-17-jre-headless \
 
-ADD target/integration-service-0.0.1.jar /target/integration-service.jar
+ADD service/target/integration-service-0.0.1.jar /target/integration-service.jar
 RUN "env"
 RUN "pwd"
 RUN "ls"

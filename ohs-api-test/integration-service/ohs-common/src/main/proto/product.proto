@@ -6,6 +6,7 @@ import "google/protobuf/wrappers.proto";
 package product;
 
 option go_package = "github.com/hub335/code-test/order-handling-system/product";
+option java_package = "com.volvo.ohs.protobuf.product";
 
 service ProductService {
   rpc CreateProduct(CreateProductRequest) returns (ProductResponse);
