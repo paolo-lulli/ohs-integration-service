@@ -59,12 +59,13 @@
 			<version>6.0.53</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- Depends on the build library -->
+		<!-- 
                 <dependency>
 		     <groupId>com.volvo.ohs</groupId>
                      <artifactId>ohs-common</artifactId>
                      <version>0.0.1</version>
                 </dependency>
+                -->
 	</dependencies>
 	<build>
 		<plugins>

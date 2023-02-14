@@ -85,7 +85,7 @@ services:
       - ohs
 
   order:
-    image: order-service:arm64
+    image: public.ecr.aws/vgcslabs/ohs/order:arm64
     container_name: order
     ports:
       - "50053:50053"
