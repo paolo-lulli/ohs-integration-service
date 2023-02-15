@@ -1,7 +1,6 @@
 package com.volvo.ohs.helper;
 
 import java.util.HashMap;
-import java.util.Optional;
 
 import org.json.JSONObject;
 
