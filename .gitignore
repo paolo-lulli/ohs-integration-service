@@ -1,1 +1,8 @@
 ohs-api-test/data/*
+ohs-api-test/integration-service/.settings/*
+ohs-api-test/integration-service/.classpath
+ohs-api-test/integration-service/.project
+ohs-api-test/integration-service/service/.classpath
+ohs-api-test/integration-service/service/.project
+ohs-api-test/integration-service/stub/.classpath
+ohs-api-test/integration-service/stub/.project
