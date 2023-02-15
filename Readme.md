@@ -49,7 +49,14 @@ docker build -t "ohc-integration-service" .
 
 ## Screenshots
 
-![Traces in Jaeger](https://github.com/paolo-lulli/ohs-integration-service/blob/master/screenshot/jaeger-traces.png)
+It is possible to check locally that the users get written.
+
 ![Users Written](https://github.com/paolo-lulli/ohs-integration-service/blob/master/screenshot/written-users.png)
+
+On my local machine it is possible to see traces.
+
+![Traces in Jaeger](https://github.com/paolo-lulli/ohs-integration-service/blob/master/screenshot/jaeger-traces.png)
+
+Also products are saved, since the name of the prod is not available the name is hardcoded as the string: **Not Mapped**
 ![Products Saved](https://github.com/paolo-lulli/ohs-integration-service/blob/master/screenshot/products-saved.png)
 
