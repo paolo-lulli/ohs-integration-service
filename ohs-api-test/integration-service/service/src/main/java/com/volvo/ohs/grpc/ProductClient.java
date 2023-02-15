@@ -1,4 +1,7 @@
-package com.volvo.ohs.services;
+package com.volvo.ohs.grpc;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.volvo.ohs.protobuf.product.ProductServiceGrpc;
 

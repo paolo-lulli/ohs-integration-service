@@ -1,7 +1,10 @@
 package com.volvo.ohs;
  
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;	
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.volvo.ohs.grpc.ProductClient;
+import com.volvo.ohs.grpc.UserClient;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
@@ -36,9 +39,11 @@ public class IntegrationServiceApplication {
         //4 for product objects, use the product service to save the data
         //5 for every row processed, write out the following values ( userPid , orderPid and supplierPid ) from the row to a new file called:  processed-orders.json
         
-        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 8082)
-                .usePlaintext()
-                .build();
+        //for(;;) {
+        	AppContext.userClient().createUser(null, null, null, null);
+        //}
+        
+        
         
        // PRODUCT: 50052
         /*

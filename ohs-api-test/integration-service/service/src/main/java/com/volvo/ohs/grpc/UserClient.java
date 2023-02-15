@@ -1,4 +1,4 @@
-package com.volvo.ohs.services;
+package com.volvo.ohs.grpc;
 
 import java.util.Optional;
 
@@ -12,7 +12,6 @@ import com.volvo.ohs.protobuf.user.UserServiceGrpc;
 
 import io.grpc.Channel;
 
-@Component
 public class UserClient{
 	  private final UserServiceGrpc.UserServiceBlockingStub blockingStub;
 	  
