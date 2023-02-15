@@ -33,7 +33,6 @@ public class GrpcWriter <T> implements ItemWriter<T> {
         for (T item : items) { 
         	processItems(objectsList, item);
         } 
-        //
         var jsonArray = new JSONArray(objectsList);
         new Output(jsonArray).toFile(Configuration.PROCESSED_ORDER_JSON_FILE);
     }
