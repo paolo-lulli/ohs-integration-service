@@ -14,8 +14,8 @@
 	<!-- sub modules -->
     <modules>
     <!-- 
-        <module>ohs-common</module>
     -->
+        <module>ohs-common</module>
         <module>service</module>
     </modules>
 	

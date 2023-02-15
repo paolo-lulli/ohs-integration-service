@@ -1,23 +1,13 @@
 package com.volvo.ohs;
  
 import org.springframework.boot.SpringApplication;
-
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.google.common.base.Supplier;
-import com.google.protobuf.StringValue;
-import com.volvo.ohs.protobuf.order.Order;
-import com.volvo.ohs.protobuf.order.Order.Product;
-import com.volvo.ohs.protobuf.user.User;
-import com.volvo.ohs.protobuf.user.User.CreateUserRequest;
-import com.volvo.ohs.protobuf.user.User.ShippingAddress;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
  
 @SpringBootApplication
 public class IntegrationServiceApplication {
- /*
-  * 
- 
-  */
 	
 	public static void main(String[] args) {
         SpringApplication.run(IntegrationServiceApplication.class, args);
@@ -44,17 +34,23 @@ public class IntegrationServiceApplication {
         //2 parses the information into user and product object
         //3 for user objects, use the user service to save the data
         //4 for product objects, use the product service to save the data
+        //5 for every row processed, write out the following values ( userPid , orderPid and supplierPid ) from the row to a new file called:  processed-orders.json
         
+        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 8082)
+                .usePlaintext()
+                .build();
         
+       // PRODUCT: 50052
+        /*
         CreateUserRequest userRequest = User.CreateUserRequest.newBuilder()
         .setEmail("")
         .setAddress(ShippingAddress.newBuilder().setCountry(StringValue.newBuilder().setValue("")).build())
         .setFullName(StringValue.newBuilder().setValue(""))
         .build();
+        */
         
-        //userRequest.
+        //UserServiceBlockingStub
         
-        //Product.getDefaultInstance().
         
     }
 }

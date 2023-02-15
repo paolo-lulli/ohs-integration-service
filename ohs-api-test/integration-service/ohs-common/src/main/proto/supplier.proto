@@ -7,6 +7,7 @@ package supplier;
 
 option go_package = "github.com/hub335/code-test/order-handling-system/supplier";
 option java_package = "com.volvo.ohs.protobuf.supplier";
+option java_multiple_files = true;
 
 service SupplierService {
   rpc CreateSupplier(CreateSupplierRequest) returns (SupplierResponse);

@@ -7,6 +7,7 @@ package user;
 
 option go_package = "github.com/hub335/code-test/order-handling-system/user";
 option java_package = "com.volvo.ohs.protobuf.user";
+option java_multiple_files = true;
 
 service UserService {
   rpc CreateUser(CreateUserRequest) returns (UserResponse);
