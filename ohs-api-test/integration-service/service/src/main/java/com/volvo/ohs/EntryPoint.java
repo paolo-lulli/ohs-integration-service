@@ -20,18 +20,7 @@ public class EntryPoint {
 	public static void main(String[] args) {
         SpringApplication.run(EntryPoint.class, args);
         
-        /*
-         Infos from CSV:
-         id,first_name,last_name,email,
-         supplier_pid,credit_card_number,credit_card_type,
-         order_id,
-         product_pid,
-         shipping_address,
-         country,
-         date_created,quantity,
-         full_name,order_status
 
-         */
         
         //1 reads a csv 
         //2 parses the information into user and product object

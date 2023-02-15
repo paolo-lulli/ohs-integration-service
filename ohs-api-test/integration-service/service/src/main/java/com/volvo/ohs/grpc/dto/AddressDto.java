@@ -17,4 +17,9 @@ public class AddressDto {
 	public String getAddress() {
 		return address;
 	}
+
+	@Override
+	public String toString() {
+		return "AddressDto [country=" + country + ", address=" + address + "]";
+	}
 }

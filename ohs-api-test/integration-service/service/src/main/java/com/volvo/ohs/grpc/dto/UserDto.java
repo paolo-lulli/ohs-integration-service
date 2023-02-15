@@ -63,4 +63,10 @@ public class UserDto {
 	public List<AddressDto> getAddresses() {
 		return addresses;
 	}
+
+	@Override
+	public String toString() {
+		return "UserDto [fullName=" + fullName + ", email=" + email + ", addresses=" + addresses + "]";
+	}
+	
 }

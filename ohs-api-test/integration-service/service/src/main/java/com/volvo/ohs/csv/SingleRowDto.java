@@ -2,21 +2,21 @@ package com.volvo.ohs.csv;
 
 public class SingleRowDto {
 // id,first_name,last_name,email,supplier_pid,credit_card_number,credit_card_type,order_id,product_pid,shipping_address,country,date_created,quantity,full_name,order_status
-	String id;
-	String firstName;
-	String lastName;
-	String email;
-	String supplierPid;
-	String creditCardNumber;
-	String creditCardType;
-	String orderId;
-	String productPid;
-	String shippingAddress;
-	String country;
-	String dateCreated;
-	String quantity;
-	String fullName;
-	String orderStatus;
+	private String id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String supplierPid;
+	private String creditCardNumber;
+	private String creditCardType;
+	private String orderId;
+	private String productPid;
+	private String shippingAddress;
+	private String country;
+	private String dateCreated;
+	private String quantity;
+	private String fullName;
+	private String orderStatus;
 
 	public String getId() {
 		return id;
