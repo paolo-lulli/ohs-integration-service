@@ -47,9 +47,9 @@ cd ohs-api-test/integration-service
 docker build -t "ohc-integration-service" .
 ```
 
-## Screenshot
+## Screenshots
 
-![Traces in Jaeger](../screenshot/jaeger-traces.png)
-![Users Written](../screenshot/written-users.png)
-![Products Saved](../screenshot/products-saved.png)
+![Traces in Jaeger](https://github.com/paolo-lulli/ohs-integration-service/blob/master/screenshot/jaeger-traces.png)
+![Users Written](https://github.com/paolo-lulli/ohs-integration-service/blob/master/screenshot/written-users.png)
+![Products Saved](https://github.com/paolo-lulli/ohs-integration-service/blob/master/screenshot/products-saved.png)
 
