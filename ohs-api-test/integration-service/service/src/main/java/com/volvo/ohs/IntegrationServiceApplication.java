@@ -1,7 +1,7 @@
 package com.volvo.ohs;
  
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;	
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;

@@ -13,9 +13,7 @@
 
 	<!-- sub modules -->
     <modules>
-    <!-- 
-    -->
-        <module>ohs-common</module>
+        <module>stubs</module>
         <module>service</module>
     </modules>
 	
