@@ -38,10 +38,18 @@ cd ohs-api-test/integration-service
 java -jar service/target/integration-service-0.0.1.jar
 ```
 
+Also a convenience script is added for local development: [run.sh](ohs-api-test/integration-service/run.sh)
+
 A [Dockerfile](ohs-api-test/Dockerfile) is provided to build the application, e.g. by doing:
 
 ```
 cd ohs-api-test/integration-service
 docker build -t "ohc-integration-service" .
 ```
+
+## Screenshot
+
+![Traces in Jaeger](../screenshot/jaeger-traces.png)
+![Users Written](../screenshot/written-users.png)
+![Products Saved](../screenshot/products-saved.png)
 
