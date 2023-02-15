@@ -15,15 +15,20 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.FileSystemResource;
 
 import com.volvo.ohs.csv.DebugWriter;
-import com.volvo.ohs.csv.GrpcEntitiesWriter;
+import com.volvo.ohs.csv.GrpcWriter;
 import com.volvo.ohs.csv.SingleRowDto;
 
 @org.springframework.context.annotation.Configuration
 @EnableBatchProcessing
 public class Configuration {
-
+	
 	private static final String ORDER_INTEGRATION_FILE = "order-integration.csv";
-
+	private static final int CHUNK_SIZE = 1000;
+	public static final int USER_CHANNEL_PORT = 50054;
+	public static final int PRODUCT_CHANNEL_PORT = 50052;
+	public static final String PROCESSED_ORDER_JSON_FILE = 
+			System.getProperty("java.io.tmpdir") +	"/processed-orders.json";
+	
 	@Autowired
 	private JobBuilderFactory jobBuilderFactory;
 
@@ -42,7 +47,7 @@ public class Configuration {
 	@Bean
 	public Step step1() {
 		return stepBuilderFactory.get("step1")
-				.<SingleRowDto, SingleRowDto>chunk(5)
+				.<SingleRowDto, SingleRowDto>chunk(CHUNK_SIZE)
 				.reader(orderIntegrationReader())
 				.writer(grpcWriter()).build();
 	}
@@ -53,8 +58,8 @@ public class Configuration {
 	}
 
 	@Bean
-	public GrpcEntitiesWriter<SingleRowDto> grpcWriter() {
-		return new GrpcEntitiesWriter<SingleRowDto>();
+	public GrpcWriter<SingleRowDto> grpcWriter() {
+		return new GrpcWriter<SingleRowDto>();
 	}
 	@Bean
 	public FlatFileItemReader<SingleRowDto> orderIntegrationReader() {

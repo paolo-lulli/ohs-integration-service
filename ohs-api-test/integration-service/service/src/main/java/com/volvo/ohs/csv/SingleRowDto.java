@@ -1,7 +1,6 @@
 package com.volvo.ohs.csv;
 
 public class SingleRowDto {
-// id,first_name,last_name,email,supplier_pid,credit_card_number,credit_card_type,order_id,product_pid,shipping_address,country,date_created,quantity,full_name,order_status
 	private String id;
 	private String firstName;
 	private String lastName;

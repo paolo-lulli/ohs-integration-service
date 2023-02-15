@@ -1,4 +1,4 @@
-package com.volvo.ohs.grpc.dto;
+package com.volvo.ohs.dto;
 
 
 public class ProductDto {

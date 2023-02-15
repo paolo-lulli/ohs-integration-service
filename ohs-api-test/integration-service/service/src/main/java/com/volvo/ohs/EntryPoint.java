@@ -19,22 +19,14 @@ public class EntryPoint {
     
 	public static void main(String[] args) {
         SpringApplication.run(EntryPoint.class, args);
-        
-
+        System.out.printf("Application STARTED");
         
         //1 reads a csv 
         //2 parses the information into user and product object
         //3 for user objects, use the user service to save the data
         //4 for product objects, use the product service to save the data
         //5 for every row processed, write out the following values ( userPid , orderPid and supplierPid ) from the row to a new file called:  processed-orders.json
-        System.out.printf("Running now");
-        
-        
-        //for(;;) {
-        //	AppContext.userClient().createUser(null, null, null, null);
-        //}
-
-        
+    
     }
     @Scheduled(cron = "0 0 * * * ?") // Once an hour
     public void perform() throws Exception
