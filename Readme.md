@@ -4,7 +4,7 @@
 
 [integration-service](ohs-api-test/integration-service/) is a modular project, composed by two Maven modules:
 
-- [stub](ohs-api-test/integration-service/stub) to generate stubs for gRpc interaction
+- [stubs](ohs-api-test/integration-service/stubs) to generate stubs for gRpc interaction
 - [service](ohs-api-test/integration-service/service) the actual business logic
 
 ## Requirements
